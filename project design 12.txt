@@ -1,0 +1,30 @@
+  [Frontend (React)]
+  +--------------------+
+  |                    |
+  | Register Component |      +------------+
+  | Login Component    |----->|            |
+  | AddExpense Component|     |            |
+  | ExpenseList Component|<----|            |
+  | EditExpense Component|---->| Backend    |
+  |                    |     | (Node.js    |
+  +--------------------+     |  Express)   |
+                             |            |
+                             +------------+
+                                   |
+  [Backend (Node.js)]              |
+  +-------------------+            |
+  |                   |<-----------+
+  | Register Route    |            |
+  | Login Route       |<-----------+
+  | Add Expense Route |            |
+  | View Expense Route|<-----------+
+  | Edit Expense Route|            |
+  | Delete Expense Route           |
+  +-------------------+            |
+                                   |
+  [Database (MongoDB)]             |
+  +-------------------+            |
+  |                   |<-----------+
+  | Users Collection  |
+  | Expenses Collection|
+  +-------------------+
